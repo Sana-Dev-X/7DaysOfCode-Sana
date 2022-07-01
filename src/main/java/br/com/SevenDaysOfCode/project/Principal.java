@@ -43,8 +43,10 @@ public class Principal {
 		List<Filmes> filmes = jh.parseInfo(colecao);
 		HTMLGenerator hGenerator = new HTMLGenerator();
 
-		// hGenerator.HTMLColetionGenerator(filmes);
-		hGenerator.generate(filmes, 2);
+		hGenerator.HTMLColetionGenerator(filmes);
+		//hGenerator.generate(filmes, 6);
+		
+		System.out.println(filmes.get(6));
 
 	}
 

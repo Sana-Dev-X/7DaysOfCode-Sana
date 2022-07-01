@@ -27,7 +27,7 @@ public class HTMLGenerator {
 
 		// Cria um writer para criar as páginas por meio do "template"
 		PrintWriter pw = new PrintWriter(
-				colecao.get(position).getRank() + " - " + colecao.get(position).getTitle() + ".html");
+				colecao.get(position).getRank() + " - " + colecao.get(position).getTitle().replace(":", " - ") + ".html");
 		pw.print(html);
 		pw.close();
 	}
