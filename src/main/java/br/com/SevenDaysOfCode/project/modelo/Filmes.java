@@ -3,7 +3,9 @@ package br.com.SevenDaysOfCode.project.modelo;
 public class Filmes {
 
 	private String id, rank, title, fullTitle, year, image, crew, imdbRating, imdbRatingCount;
-	public Filmes(String id, String rank, String title, String fullTitle, String year, String image, String crew, String imdbRating, String imdbRatingCount) {
+
+	public Filmes(String id, String rank, String title, String fullTitle, String year, String image, String crew,
+			String imdbRating, String imdbRatingCount) {
 		setId(id);
 		setRank(rank);
 		setTitle(title);
@@ -14,20 +16,20 @@ public class Filmes {
 		setImdbRating(imdbRating);
 		setImdbRatingCount(imdbRatingCount);
 	}
-	
-	
+
 	@Override
 	public String toString() {
-			return "ID: "+ getId()+"\nRank: "+getRank()+"\nTitle: "+getTitle()+"\nFull Title: "+getFullTitle()+"\nYear: "+getYear()+"\nImage: "+getImage()+"\nCrew: "+getCrew()+"\nIMDB Rating: "+getImdbRating()+"\nIMDB Rating Count "+getImdbRatingCount()+"\n\n";
+		return "\nID: " + getId() + "\nRank: " + getRank() + "\nTitle: " + getTitle() + "\nFull Title: "
+				+ getFullTitle() + "\nYear: " + getYear() + "\nImage: " + getImage() + "\nCrew: " + getCrew()
+				+ "\nIMDB Rating: " + getImdbRating() + "\nIMDB Rating Count: " + getImdbRatingCount() + "\n\n";
 	}
-	
-	
+
 	public String getId() {
 		return id;
 	}
 
 	public void setId(String id) {
-		
+
 		this.id = id;
 	}
 
@@ -36,7 +38,7 @@ public class Filmes {
 	}
 
 	public void setRank(String rank) {
-		
+
 		this.rank = rank;
 	}
 
@@ -55,7 +57,7 @@ public class Filmes {
 
 	public void setFullTitle(String fullTitle) {
 
-		this.fullTitle = fullTitle ;
+		this.fullTitle = fullTitle;
 	}
 
 	public String getYear() {
@@ -79,7 +81,7 @@ public class Filmes {
 	}
 
 	public void setCrew(String crew) {
-		this.crew = crew ;
+		this.crew = crew;
 	}
 
 	public String getImdbRating() {
@@ -87,7 +89,7 @@ public class Filmes {
 	}
 
 	public void setImdbRating(String imdbRating) {
-		this.imdbRating = imdbRating ;
+		this.imdbRating = imdbRating;
 	}
 
 	public String getImdbRatingCount() {
@@ -95,8 +97,7 @@ public class Filmes {
 	}
 
 	public void setImdbRatingCount(String imdbRatingCount) {
-		this.imdbRatingCount = imdbRatingCount ;
+		this.imdbRatingCount = imdbRatingCount;
 	}
-	
-	
+
 }

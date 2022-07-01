@@ -1,0 +1,17 @@
+p {
+	text-align: center;
+}
+
+h1{
+text-align:center;
+}
+
+.principal{
+     display: flex;
+      justify-content: center;
+}
+
+img{
+    width: 20%;
+}
+
