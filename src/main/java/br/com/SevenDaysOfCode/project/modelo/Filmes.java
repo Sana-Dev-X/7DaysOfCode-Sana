@@ -1,6 +1,7 @@
 package br.com.SevenDaysOfCode.project.modelo;
 
-public class Filmes {
+
+public class Filmes implements Comparable<Filmes>{
 
 	private String id, rank, title, fullTitle, year, image, crew, imdbRating, imdbRatingCount;
 
@@ -100,4 +101,12 @@ public class Filmes {
 		this.imdbRatingCount = imdbRatingCount;
 	}
 
+	@Override
+	public int compareTo(Filmes o) {
+		
+		return 0;
+				//this.getFullTitle().compareTo(getFullTitle());
+	}
+
+	
 }
