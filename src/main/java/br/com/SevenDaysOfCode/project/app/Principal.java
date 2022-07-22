@@ -29,7 +29,7 @@ public class Principal {
 	public static void main(String[] args) throws Exception {
 
 		HttpClient client = HttpClient.newHttpClient();
-		URI uri = new URI("https://imdb-api.com/en/API/Top250Movies/k_i7oyujq7");
+		URI uri = new URI("https://imdb-api.com/en/API/Top250Movies/(chave)");
 		HttpRequest request = HttpRequest.newBuilder().uri(uri).build();
 		HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 		String json = response.body();
